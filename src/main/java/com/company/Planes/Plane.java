@@ -31,8 +31,7 @@ abstract public class Plane {
     }
 
     public int getMaxLoadCapacity() {
-        int result = this.maxLoadCapacity;
-        return result;
+        return this.maxLoadCapacity;
     }
 
     @Override
