@@ -1,14 +1,14 @@
 package com.company;
 
-import com.company.Planes.experimentalPlane;
+import com.company.planes.experimentalPlane;
 import com.company.models.ClassificationLevel;
 import com.company.models.ExperimentalTypes;
 import com.company.models.MilitaryType;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import com.company.Planes.MilitaryPlane;
-import com.company.Planes.PassengerPlane;
-import com.company.Planes.Plane;
+import com.company.planes.MilitaryPlane;
+import com.company.planes.PassengerPlane;
+import com.company.planes.Plane;
 
 import java.util.Arrays;
 import java.util.List;

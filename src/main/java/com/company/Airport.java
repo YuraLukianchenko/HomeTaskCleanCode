@@ -1,10 +1,10 @@
 package com.company;
 
-import com.company.Planes.experimentalPlane;
+import com.company.planes.experimentalPlane;
 import com.company.models.MilitaryType;
-import com.company.Planes.MilitaryPlane;
-import com.company.Planes.PassengerPlane;
-import com.company.Planes.Plane;
+import com.company.planes.MilitaryPlane;
+import com.company.planes.PassengerPlane;
+import com.company.planes.Plane;
 
 import java.util.*;
 /**
@@ -25,8 +25,9 @@ public class Airport {
 
     public void setPassengerPlanesFromBundle(){
         ResourceBundle passengerPlaneBundle =  ResourceBundle.getBundle("Airbus A320");
-        PassengerPlane passengerPlane = new PassengerPlane(passengerPlaneBundle);
-        
+        planes.add( new PassengerPlane(passengerPlaneBundle));
+        planes.add(new PassengerPlane());
+
     }
 
     public List<PassengerPlane> getPasPl() {
@@ -139,7 +140,7 @@ public class Airport {
     @Override
     public String toString() {
         return "com.company.Airport{" +
-                "com.company.Planes=" + planes.toString() +
+                "com.company.planes=" + planes.toString() +
                 '}';
     }
 }

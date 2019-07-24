@@ -1,4 +1,4 @@
-package com.company.Planes;
+package com.company.planes;
 
 import com.company.models.MilitaryType;
 

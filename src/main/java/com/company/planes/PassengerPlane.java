@@ -1,4 +1,4 @@
-package com.company.Planes;
+package com.company.planes;
 
 import java.util.Objects;
 import java.util.ResourceBundle;
