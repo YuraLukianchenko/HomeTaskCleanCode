@@ -1,4 +1,4 @@
-package Planes;
+package com.company.Planes;
 
 import java.util.Objects;
 

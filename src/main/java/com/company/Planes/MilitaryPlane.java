@@ -1,6 +1,6 @@
-package Planes;
+package com.company.Planes;
 
-import models.MilitaryType;
+import com.company.models.MilitaryType;
 
 import java.util.Objects;
 

@@ -1,7 +1,9 @@
-import models.MilitaryType;
-import Planes.MilitaryPlane;
-import Planes.PassengerPlane;
-import Planes.Plane;
+package com.company;
+
+import com.company.models.MilitaryType;
+import com.company.Planes.MilitaryPlane;
+import com.company.Planes.PassengerPlane;
+import com.company.Planes.Plane;
 
 import java.util.Arrays;
 import java.util.List;
