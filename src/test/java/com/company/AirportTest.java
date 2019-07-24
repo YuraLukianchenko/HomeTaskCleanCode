@@ -1,7 +1,6 @@
 package com.company;
 
 import com.company.Planes.experimentalPlane;
-import com.company.Airport;
 import com.company.models.ClassificationLevel;
 import com.company.models.ExperimentalTypes;
 import com.company.models.MilitaryType;
@@ -68,7 +67,7 @@ public class AirportTest {
         for (int i = 0; i < planesSortedByMaxLoadCapacity.size() - 1; i++) {
             Plane currentPlane = planesSortedByMaxLoadCapacity.get(i);
             Plane nextPlane = planesSortedByMaxLoadCapacity.get(i + 1);
-            if (currentPlane.getMinLoadCapacity() > nextPlane.getMinLoadCapacity()) {
+            if (currentPlane.getMaxLoadCapacity() > nextPlane.getMaxLoadCapacity()) {
                 nextPlaneMaxLoadCapacityIsHigherThanCurrent = false;
                 break;
             }

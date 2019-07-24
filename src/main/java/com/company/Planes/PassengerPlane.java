@@ -12,6 +12,9 @@ public class PassengerPlane extends Plane{
         super(model, maxSpeed, maxFlightDistance, maxLoadCapacity);
         this.passengersCapacity = passengersCapacity;
     }
+    public PassengerPlane(){
+
+    }
 
 
     //=================METHODS=================

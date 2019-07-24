@@ -27,7 +27,7 @@ public class MainController {
     );
 
     public void start() {
-        Airport airport = new Airport(planes);
+        Airport airport = new Airport();
         Airport militaryAirport = new Airport(airport.getMilitaryPlanes());
         Airport passengerAirport = new Airport(airport.getPasPl());
         System.out.println("Military airport sorted by max distance: " + militaryAirport
