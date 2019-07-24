@@ -25,7 +25,8 @@ public class Airport {
 
     public void setPassengerPlanesFromBundle(){
         ResourceBundle passengerPlaneBundle =  ResourceBundle.getBundle("Airbus A320");
-        PassengerPlane passengerPlane = new PassengerPlane();
+        PassengerPlane passengerPlane = new PassengerPlane(passengerPlaneBundle);
+        
     }
 
     public List<PassengerPlane> getPasPl() {

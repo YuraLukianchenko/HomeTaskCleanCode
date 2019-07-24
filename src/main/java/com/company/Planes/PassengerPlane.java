@@ -1,6 +1,7 @@
 package com.company.Planes;
 
 import java.util.Objects;
+import java.util.ResourceBundle;
 
 public class PassengerPlane extends Plane{
 
@@ -14,6 +15,13 @@ public class PassengerPlane extends Plane{
     }
     public PassengerPlane(){
 
+    }
+
+    public PassengerPlane(ResourceBundle passengerPlaneBundle){
+        this.setModel(passengerPlaneBundle.getString("model"));
+        this.setMaxSpeed(Integer.valueOf(passengerPlaneBundle.getString("maxSpeed")));
+        this.setMaxFlightDistance(Integer.valueOf(passengerPlaneBundle.getString("maxFlightDistance")));
+        this.setMaxLoadCapacity(Integer.valueOf(passengerPlaneBundle.getString("maxLoadCapacity")));
     }
 
 

@@ -1,6 +1,7 @@
 package com.company.Planes;
 
 import java.util.Objects;
+import java.util.ResourceBundle;
 
 abstract public class Plane {
     String model;
@@ -18,6 +19,13 @@ abstract public class Plane {
 
     }
 
+    public Plane(ResourceBundle passengerPlaneBundle){
+        this.setModel(passengerPlaneBundle.getString("model"));
+        this.setMaxSpeed(Integer.valueOf(passengerPlaneBundle.getString("maxSpeed")));
+        this.setMaxFlightDistance(Integer.valueOf(passengerPlaneBundle.getString("maxFlightDistance")));
+        this.setMaxLoadCapacity(Integer.valueOf(passengerPlaneBundle.getString("maxLoadCapacity")));
+    }
+
     public String getModel() {
         return model;
     }
@@ -32,6 +40,22 @@ abstract public class Plane {
 
     public int getMaxLoadCapacity() {
         return this.maxLoadCapacity;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public void setMaxSpeed(int maxSpeed) {
+        this.maxSpeed = maxSpeed;
+    }
+
+    public void setMaxFlightDistance(int maxFlightDistance) {
+        this.maxFlightDistance = maxFlightDistance;
+    }
+
+    public void setMaxLoadCapacity(int maxLoadCapacity) {
+        this.maxLoadCapacity = maxLoadCapacity;
     }
 
     @Override
