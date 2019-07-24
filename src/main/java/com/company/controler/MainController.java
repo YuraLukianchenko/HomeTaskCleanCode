@@ -8,7 +8,7 @@ import com.company.Planes.Plane;
 import java.util.Arrays;
 import java.util.List;
 
-public class Runner {
+public class MainController {
     static List<Plane> planes = Arrays.asList(
             new PassengerPlane("Boeing-737", 900, 12000, 60500, 164),
             new PassengerPlane("Boeing-737-800", 940, 12300, 63870, 192),
@@ -26,7 +26,7 @@ public class Runner {
             new MilitaryPlane("C-130 Hercules", 650, 5000, 110000, MilitaryType.TRANSPORT)
     );
 
-    public static void main(String[] args) {
+    public void start() {
         Airport airport = new Airport(planes);
         Airport militaryAirport = new Airport(airport.getMilitaryPlanes());
         Airport passengerAirport = new Airport(airport.getPasPl());
