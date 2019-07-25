@@ -24,9 +24,21 @@ public class Airport {
     }
 
     public void setPassengerPlanesFromBundle(){
-        ResourceBundle passengerPlaneBundle =  ResourceBundle.getBundle("Airbus A320");
-        planes.add( new PassengerPlane(passengerPlaneBundle));
-        planes.add(new PassengerPlane());
+        List<Plane> passengerPlanes = new ArrayList<>();
+        String[] modelsOfPlanes = new String[]{"plane/passengerPlane/Airbus_A320",
+                                               "plane/passengerPlane/Airbus_A330",
+                                               "plane/passengerPlane/Boeing-737",
+                                               "plane/passengerPlane/Boeing-737-800",
+                                               "plane/passengerPlane/Boeing-747",
+                                               "plane/passengerPlane/Bombardier_CS300",
+                                               "plane/passengerPlane/Embraer_190",
+                                               "plane/passengerPlane/Sukhoi_Superjet_100"};
+        for(String planeModel : modelsOfPlanes) {
+            ResourceBundle passengerPlaneBundle = ResourceBundle.getBundle(planeModel);
+            passengerPlanes.add(new PassengerPlane(passengerPlaneBundle));
+        }
+        planes = passengerPlanes;
+
 
     }
 

@@ -5,10 +5,8 @@ import java.util.ResourceBundle;
 
 public class PassengerPlane extends Plane{
 
-    //=================FIELDS=================
     private int passengersCapacity;
 
-    //=================CONSTRUCTORS=================
     public PassengerPlane(String model, int maxSpeed, int maxFlightDistance, int maxLoadCapacity, int passengersCapacity) {
         super(model, maxSpeed, maxFlightDistance, maxLoadCapacity);
         this.passengersCapacity = passengersCapacity;
@@ -22,12 +20,15 @@ public class PassengerPlane extends Plane{
         this.setMaxSpeed(Integer.valueOf(passengerPlaneBundle.getString("maxSpeed")));
         this.setMaxFlightDistance(Integer.valueOf(passengerPlaneBundle.getString("maxFlightDistance")));
         this.setMaxLoadCapacity(Integer.valueOf(passengerPlaneBundle.getString("maxLoadCapacity")));
+        this.setPassengersCapacity(Integer.valueOf(passengerPlaneBundle.getString("passengersCapacity")));
     }
 
-
-    //=================METHODS=================
     public int getPassengersCapacity() {
         return passengersCapacity;
+    }
+
+    public void setPassengersCapacity(int passengersCapacity) {
+        this.passengersCapacity = passengersCapacity;
     }
 
     @Override
